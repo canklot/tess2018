@@ -1,0 +1,1 @@
+nircmd.exe savescreenshot "C:\Users\ali\Desktop\tesseract-script-master\scrnsht.png"
