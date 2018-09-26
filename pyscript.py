@@ -5,6 +5,8 @@ with io.open("out.txt",'r',encoding='utf8') as f:
 for x in range(len(text)):
  if text[x]=='&':
   text=text[:x] + ' ' + text[x+1:]
+ if text[x]=='4':
+  text=text[:x] + ' ' + text[x+1:]
  if text[x]=='|':
   text=text[:x] + ' ' + text[x+1:]
  if text[x]==':':

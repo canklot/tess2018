@@ -1,7 +1,7 @@
 SET chromeDir=awfwaf
 cd nir
 nircmd.exe savescreenshot scrnsht.png
-magick scrnsht.png -crop 330x70+34+126 cropped.jpg
+magick scrnsht.png -crop 500x100+40+170 cropped.jpg
 magick convert cropped.jpg -negate -resize 150%% negativeres.jpg
 magick convert negativeres.jpg -colorspace gray gray.jpg
 magick convert gray.jpg -colorspace gray -threshold 25%% out.png
