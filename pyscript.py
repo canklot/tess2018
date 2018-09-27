@@ -1,7 +1,7 @@
 import io
 with io.open("out.txt",'r',encoding='utf8') as f:
     text = f.read()
-
+linecounter=0
 for x in range(len(text)):
  if text[x]=='&':
   text=text[:x] + ' ' + text[x+1:]
@@ -13,6 +13,7 @@ for x in range(len(text)):
   text=text[:x] + ' ' + text[x+1:]
  if text[x]=='\n':
   text=text[:x] + '+'+ text[x+1:]
+  linecounter=linecounter+1
  if text[x]=='“':
   text=text[:x] + '+'+ text[x+1:]
  if text[x]=='İ':
