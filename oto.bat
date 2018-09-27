@@ -14,15 +14,7 @@ tesseract.exe %nirDir%\out.png %mainDir%\out
 cd..
 pyscript.py
 SET /p kelime=<srch.txt
-SET /p linecounter=<linecounter.txt
-cd nir
-IF %linecounter%==3 (magick scrnsht.png -crop 300x40+30+320 choiceA.png)
-IF %linecounter%==3 (magick scrnsht.png -crop 300x40+30+410 choiceB.png)
-IF %linecounter%==3 (magick scrnsht.png -crop 300x40+30+490 choiceC.png)
-IF %linecounter%==2 (magick scrnsht.png -crop 300x40+30+290 choiceA.png)
-IF %linecounter%==2 (magick scrnsht.png -crop 300x40+30+380 choiceB.png)
-IF %linecounter%==2 (magick scrnsht.png -crop 300x40+30+465 choiceC.png)
-cd..
+mgck-scrpt-choice.bat
 cd tess
 tesseract.exe %nirDir%\choiceA.png %mainDir%\choiceA
 tesseract.exe %nirDir%\choiceB.png %mainDir%\choiceB
