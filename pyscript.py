@@ -38,6 +38,8 @@ for x in range(len(text)):
   text=text[:x] + 'o' + text[x+1:]
  if text[x]=='ü':
   text=text[:x] + 'u' + text[x+1:]
+linecounter=linecounter-1
+#tesseract genelde fazladan bir satır ekliyor
 # hatalı karakterleri boşluk yapma sona boşluk ekle google ın burayı doldur diye ratma ayarı var onu şu 3gene koyabilirim
 #şıkları aratman lazım
 # process Unicode text
