@@ -42,5 +42,6 @@ for x in range(len(text)):
 #şıkları aratman lazım
 # process Unicode text
 print(text)
+print(linecounter)
 with io.open("srch.txt",'w',encoding='utf8') as f:
     f.write(text)
