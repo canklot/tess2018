@@ -47,3 +47,5 @@ print(text)
 print(linecounter)
 with io.open("srch.txt",'w',encoding='utf8') as f:
     f.write(text)
+with io.open("linecounter.txt",'w',encoding='utf8') as f:
+    f.write(str(linecounter))
