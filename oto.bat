@@ -14,7 +14,9 @@ tesseract.exe %nirDir%\out.png %mainDir%\out
 cd..
 pyscript.py
 SET /p kelime=<srch.txt
+cd nir
 mgck-scrpt-choice.bat
+cd..
 cd tess
 tesseract.exe %nirDir%\choiceA.png %mainDir%\choiceA
 tesseract.exe %nirDir%\choiceB.png %mainDir%\choiceB
