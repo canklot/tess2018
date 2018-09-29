@@ -7,7 +7,8 @@ SET /p choiceA=<choiceA.txt
 SET /p choiceB=<choiceB.txt
 SET /p choiceC=<choiceC.txt
 pushd C:\Program Files (x86)\Google\Chrome\Application\
-chrome.exe https://www.google.com.tr/search?q=%kelime%+%choiceA%
-chrome.exe https://www.google.com.tr/search?q=%kelime%+%choiceB%
-chrome.exe https://www.google.com.tr/search?q=%kelime%+%choiceC%
+SET query=https://www.google.com.tr/search?q=
+chrome.exe %query%%kelime%+%choiceA%
+chrome.exe %query%%kelime%+%choiceB%
+chrome.exe %query%%kelime%+%choiceC%
 popd
