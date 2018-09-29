@@ -9,6 +9,7 @@ choiceCorrector.py choiceB.txt
 choiceCorrector.py choiceC.txt
 SET /p correctedChoiceA=<correctedChoiceA.txt
 SET /p correctedChoiceB=<correctedChoiceB.txt
+echo %correctedChoiceB%
 SET /p correctedChoiceC=<correctedChoiceC.txt
 pushd C:\Program Files (x86)\Google\Chrome\Application\
 SET query=https://www.google.com.tr/search?q=

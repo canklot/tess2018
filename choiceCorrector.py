@@ -28,17 +28,29 @@ for x in range(len(text)):
   text=text[:x] + ' '+ text[x+1:]
  if text[x]=='ç':
   text=text[:x] + 'c'+ text[x+1:]
+ if text[x]=='Ç':
+  text=text[:x] + 'c'+ text[x+1:]
  if text[x]=='ğ':
   text=text[:x] + 'g' + text[x+1:]
+ if text[x]=='Ğ':
+  text=text[:x] + 'g' + text[x+1:]
  if text[x]=='ş':
+  text=text[:x] + 's' + text[x+1:]
+ if text[x]=='Ş':
   text=text[:x] + 's' + text[x+1:]
  if text[x]=='ó':
   text=text[:x] + 'o' + text[x+1:]
  if text[x]=='Ô':
   text=text[:x] + 'o' + text[x+1:]
+ if text[x]=='Ô':
+  text=text[:x] + 'o' + text[x+1:]
  if text[x]=='ö':
   text=text[:x] + 'o' + text[x+1:]
+ if text[x]=='Ö':
+  text=text[:x] + 'o' + text[x+1:]
  if text[x]=='ü':
+  text=text[:x] + 'u' + text[x+1:]
+ if text[x]=='Ü':
   text=text[:x] + 'u' + text[x+1:]
   #space to plus here bottom
  if text[x]==' ':
