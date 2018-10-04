@@ -14,6 +14,7 @@ SET /p correctedChoiceC=<correctedChoiceC.txt
 pushd C:\Program Files (x86)\Google\Chrome\Application\
 SET query=https://www.google.com.tr/search?q=
 chrome.exe %query%%kelime%+%correctedChoiceA%
-chrome.exe %query%%kelime%+%correctedChoiceB%
-chrome.exe %query%%kelime%+%correctedChoiceC%
+popd
+pushd C:\Mozilla Firefox
+firefox.exe %query%%kelime%+%correctedChoiceB%
 popd

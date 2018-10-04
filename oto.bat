@@ -1,4 +1,3 @@
-SET chromeDir=awfwaf
 cd nir
 magick convert screenshot: scrnsht.png
 magick scrnsht.png -crop 500x100+40+170 cropped.png
