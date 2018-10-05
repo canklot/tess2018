@@ -6,3 +6,6 @@ SET choiceA=japonya
 SET query=https://www.google.com.tr/search?q=
 SEt not=yorum yapmayi bilmiyorum test amacli degişkenler ile oynadim düzelt
 curl.exe -A %userAgentGooglebot% -o resultA.html "%query%%kelime%+%choiceA%"
+SET finish=%Time%
+echo %start%
+echo %finish%
