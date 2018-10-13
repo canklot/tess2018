@@ -1,6 +1,5 @@
 import io
 import sys
-print("Hello " + sys.argv[1])
 with io.open(sys.argv[1],'r',encoding='utf8') as f:
     text = f.read()
 
