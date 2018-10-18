@@ -5,7 +5,7 @@ REM SET kelime=2007+dnya+kupasi+hangi+ulkede+duzenlendi
 SET choiceA=japonya
 SET query=https://www.google.com.tr/search?q=
 SEt not=yorum yapmayi bilmiyorum test amacli degişkenler ile oynadim düzelt
-curl.exe -A %userAgentGooglebot% -o resultA.html "%query%%kelime%+%correctedChoiceA%" | curl.exe -A %userAgentGooglebot% -o resultB.html "%query%%kelime%+%correctedChoiceB%" | curl.exe -A %userAgentGooglebot% -o resultC.html "%query%%kelime%+%correctedChoiceC%"
+curl.exe -A %userAgentGooglebot% -o resultA.html "%query%%kelime%+%correctedChoiceA%" --ipv4 | curl.exe -A %userAgentGooglebot% -o resultB.html "%query%%kelime%+%correctedChoiceB%" --ipv4 | curl.exe -A %userAgentGooglebot% -o resultC.html "%query%%kelime%+%correctedChoiceC%" --ipv4
 stringSearch.py
 SET finish=%Time%
 echo %start%
