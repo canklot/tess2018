@@ -1,11 +1,3 @@
 *.png
 *.html
-choiceA.txt
-choiceB.txt
-choiceC.txt
-correctedchoiceA.txt
-correctedchoiceB.txt
-correctedchoiceC.txt
-linecounter.txt
-out.txt
-srch.txt
+*.txt
