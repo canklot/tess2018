@@ -1,7 +1,4 @@
-
 *.png
-resultA.html
-resultA.html
 *.html
 choiceA.txt
 choiceB.txt
@@ -11,15 +8,4 @@ correctedchoiceB.txt
 correctedchoiceC.txt
 linecounter.txt
 out.txt
-srch.txt
-resultA.html
-choiceB.txt
-choiceA.txt
-choiceC.txt
-correctedchoiceA.txt
-correctedchoiceB.txt
-correctedchoiceC.txt
-linecounter.txt
-out.txt
-resultA.html
 srch.txt
