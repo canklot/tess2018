@@ -14,3 +14,5 @@ def searchHtml(dosyaname):
     result=(text[sonucSayisiStart:sonucSayisiStop])
     return result
 print(searchHtml("resultA.html"))
+print(searchHtml("resultB.html"))
+print(searchHtml("resultC.html"))
