@@ -61,10 +61,7 @@ linecounter=linecounter-1
 #Büyük harf küçük harf başka sıyılıyor dimi ya ufff
 #tesseract genelde fazladan bir satır ekliyor
 # hatalı karakterleri boşluk yapma sona boşluk ekle google ın burayı doldur diye ratma ayarı var onu şu 3gene koyabilirim
-#şıkları aratman lazım
-# process Unicode text
-print(text)
-print(linecounter)
+
 with io.open("srch.txt",'w',encoding='utf8') as f:
     f.write(text)
 with io.open("linecounter.txt",'w',encoding='utf8') as f:

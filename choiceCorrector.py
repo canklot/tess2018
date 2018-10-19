@@ -56,6 +56,5 @@ for x in range(len(text)):
   text=text[:x] + '+' + text[x+1:]
   
   
-print(text)
 with io.open("corrected"+sys.argv[1],'w',encoding='utf8') as f:
     f.write(text)

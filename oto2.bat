@@ -13,13 +13,3 @@ SET /p correctedChoiceB=<correctedChoiceB.txt
 SET /p correctedChoiceC=<correctedChoiceC.txt
 
 curloto.bat
-
-goto browsersEnd
-pushd C:\Program Files (x86)\Google\Chrome\Application\
-SET query=https://www.google.com.tr/search?q=
-chrome.exe %query%%kelime%+%correctedChoiceA%
-popd
-pushd C:\Mozilla Firefox
-firefox.exe %query%%kelime%+%correctedChoiceB%
-popd
-:BrowsersEnd
