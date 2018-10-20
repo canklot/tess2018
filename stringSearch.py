@@ -13,6 +13,6 @@ def searchHtml(dosyaname):
     sonucSayisiStop = text.find("sonuç bulundu")
     result=(text[sonucSayisiStart:sonucSayisiStop])
     return result
-print(searchHtml("resultA.html"))
-print(searchHtml("resultB.html"))
-print(searchHtml("resultC.html"))
+print("a)"+ searchHtml("resultA.html"))
+print("b)"+ searchHtml("resultB.html"))
+print("c)"+ searchHtml("resultC.html"))
