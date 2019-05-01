@@ -27,6 +27,8 @@ for x in range(len(text)):
   text=text[:x] + 'i'+ text[x+1:]
  if text[x]=='"':
   text=text[:x] + ' '+ text[x+1:]
+ if text[x]=='â':
+  text=text[:x] + 'a'+ text[x+1:]
  if text[x]=='ç':
   text=text[:x] + 'c'+ text[x+1:]
  if text[x]=='Ç':
@@ -58,6 +60,7 @@ for x in range(len(text)):
   text=text[:x] + '+' + text[x+1:]
   
 linecounter=linecounter-1
+#Bir ara soru ve sık düzeltiyici karsilastir
 #Büyük harf küçük harf başka sıyılıyor dimi ya ufff
 #tesseract genelde fazladan bir satır ekliyor
 # hatalı karakterleri boşluk yapma sona boşluk ekle google ın burayı doldur diye ratma ayarı var onu şu 3gene koyabilirim

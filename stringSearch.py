@@ -9,8 +9,8 @@ def searchHtml(dosyaname):
         resultStartsIndex = text.find("resultStats", lastSeachedIndex + 10)
         lastSeachedIndex = resultStartsIndex
         resultStatsCounter = resultStatsCounter + 1
-    sonucSayisiStart = resultStartsIndex + 22
-    sonucSayisiStop = text.find("sonuç bulundu")
+    sonucSayisiStart = resultStartsIndex+12
+    sonucSayisiStop = text.find("</div>",sonucSayisiStart)
     result=(text[sonucSayisiStart:sonucSayisiStop])
     return result
 print("a)"+ searchHtml("resultA.html"))
